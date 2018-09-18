@@ -7,7 +7,7 @@ Write a program that asks the user for their name and then prints out a welcome 
                   
         What is your name? 
 
-2. The user will then enter in their name.
+2. Then the user will enter their name.
                    
 
 3. Then print out: 
