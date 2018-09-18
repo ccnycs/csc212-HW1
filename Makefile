@@ -1,3 +1,5 @@
-all: main
+all: main test
 main: main.cpp
-	g++ -o student main.cpp
+	g++ -o main main.cpp
+clean:
+	rm main *~

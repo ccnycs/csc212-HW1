@@ -1,7 +1,7 @@
 Coding Problem
 ==============
 
-Write a program that asks the user for their name and then prints our a welcome message.
+Write a program that asks the user for their name and then prints out a welcome message.
 
 1. When the program begins, prompt the user for their name. Use the following wording (verbatim):
                   
