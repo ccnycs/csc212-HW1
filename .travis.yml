@@ -1,0 +1,22 @@
+sudo: false
+language:
+   - cpp
+   - python
+python: "3.6"
+compiler: g++
+os: linux
+addons:
+apt
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-7
+    - g++-7
+
+install:
+    - pip install pexpect
+    - pip install pytest
+
+script:
+    - make
+    - pytest
