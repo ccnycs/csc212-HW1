@@ -1,5 +1,5 @@
 import math
-from pathlib import Path
+import os
 import random
 import string
 import sys
@@ -8,11 +8,8 @@ import traceback
 import pexpect
 from pexpect import ExceptionPexpect
 
-import pytest
-
 def test_binary_exists():
-    p = Path(Path.cwd()/'main')
-    assert p.exists()
+    assert os.path.exists("main")
     
 class TestIO(object):
     

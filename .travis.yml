@@ -2,9 +2,10 @@ sudo: false
 language:
    - cpp
    - python
-python: "3.6"
+python: 3.6
 compiler: g++
 os: linux
+
 addons:
     apt:
         sources:
@@ -12,11 +13,13 @@ addons:
         packages:
         - gcc-7
         - g++-7
+        - python3
 
 install:
-    - pip install pexpect
-    - pip install pytest
-
+    - pip install --user --upgrade pip
+    - pip install --user --upgrade pytest
+    - pip install --user pexpect
+    
 script:
-    - make
-    - pytest
+    - g++ -o main main.cpp
+    - pytest 
