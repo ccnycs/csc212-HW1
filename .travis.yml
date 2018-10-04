@@ -19,6 +19,7 @@ install:
     - pip install --user --upgrade pip
     - pip install --user --upgrade pytest
     - pip install --user pexpect
+    
 script:
-    - make
+    - g++ -o main main.cpp
     - pytest 
