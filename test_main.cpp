@@ -9,6 +9,7 @@ class TestIO : public testing::Test{
         std::string command = "./main";
 };
 
+/**based on https://stackoverflow.com/q/44610978/1267531**/
 TEST_F(TestIO, TestOutput){
     std::array<char, 128> buffer;
     std::string result;
