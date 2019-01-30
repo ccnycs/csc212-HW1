@@ -26,5 +26,5 @@ endif()
 
 add_executable(tests test_main.cpp)
 find_package (Threads)
-target_link_libraries(tests gtest ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(tests gtest ${CMAKE_THREAD_LIBS_INIT} )
 target_compile_options(tests PRIVATE -std=c++0x -g -Wall)
