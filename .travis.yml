@@ -17,5 +17,5 @@ before_install:
     - cd build
     - cmake ..
 script:
-    - make tests
+    - make
     - ./tests
